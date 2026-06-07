@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brightline Dental Studio | Los Angeles Dentist | Same-Week Appointments</title>
+  <meta name="description" content="Brightline Dental Studio in Los Angeles offers same-week dental appointments. Teeth whitening, implants, clear aligners, family & emergency dentistry. 4.9★ rated. Book online today."/>
+  <meta name="keywords" content="dentist Los Angeles, dental studio LA, teeth whitening Los Angeles, dental implants, clear aligners, emergency dentist, family dentistry Hollywood"/>
+  <meta name="author" content="Brightline Dental Studio"/>
+  <link rel="canonical" href="https://brightlinedentalstudio.com"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="Brightline Dental Studio | Los Angeles Dentist"/>
+  <meta property="og:description" content="Same-week dental appointments in Los Angeles. Teeth whitening, implants, aligners & more. 4.9★ from 800+ patients."/>
+  <meta property="og:url" content="https://brightlinedentalstudio.com"/>
+  <meta property="og:site_name" content="Brightline Dental Studio"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:image" content="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=85&fit=crop"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Brightline Dental Studio | Los Angeles"/>
+  <meta name="twitter:description" content="Same-week dental appointments. 4.9★ rated. Whitening, implants, aligners & more."/>
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=85&fit=crop"/>
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Dentist",
+    "name": "Brightline Dental Studio",
+    "description": "Modern dental studio in Los Angeles offering preventive care, teeth whitening, clear aligners, implants, and family dentistry.",
+    "url": "https://brightlinedentalstudio.com",
+    "telephone": "(323) 555-0142",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Los Angeles",
+      "addressRegion": "CA",
+      "addressCountry": "US"
+    },
+    "openingHours": "Mo-Fr 08:00-18:00 Sa 09:00-15:00",
+    "priceRange": "$$",
+    "image": "https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=1200&q=85&fit=crop",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "800"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Dental Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Cleaning & Exam"}, "price": "89", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Complete Care"}, "price": "249", "priceCurrency": "USD"},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Smile Design"}, "price": "599", "priceCurrency": "USD"}
+      ]
+    },
+    "medicalSpecialty": "Dentistry",
+    "availableService": ["Preventive Care","Teeth Whitening","Clear Aligners","Dental Implants","Emergency Care","Family Dentistry"]
+  }
+  </script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+    :root{
+      --bg:#f8f5f0;--white:#ffffff;--dark:#0d0d0d;
+      --teal:#00796b;--teal2:#00a896;--teal-light:#e0f4f2;
+      --gold:#c49a2a;--muted:#888;--border:#e8e2d9;--text:#1a1a1a;
+      --ease:cubic-bezier(0.22,1,0.36,1);
+    }
+    html{scroll-behavior:smooth;}
+    body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--text);overflow-x:hidden;cursor:none;}
+
+    /* CURSOR */
+    .cursor{position:fixed;width:10px;height:10px;background:var(--teal);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:transform 0.15s var(--ease),background 0.2s;}
+    .cursor-ring{position:fixed;width:36px;height:36px;border:1.5px solid rgba(0,121,107,0.4);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all 0.15s ease;}
+    .cursor.hovering{transform:translate(-50%,-50%) scale(2.5);background:var(--teal2);}
+    .cursor-ring.hovering{transform:translate(-50%,-50%) scale(1.5);border-color:var(--teal2);}
+
+    nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:20px 6%;display:flex;align-items:center;justify-content:space-between;background:rgba(248,245,240,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);transition:padding 0.3s;}
+    nav.compact{padding:14px 6%;}
+    .logo{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:900;color:var(--dark);text-decoration:none;letter-spacing:-0.02em;}
+    .logo span{color:var(--teal);}
+    nav ul{list-style:none;display:flex;gap:32px;align-items:center;}
+    nav ul a{text-decoration:none;color:var(--muted);font-size:0.85rem;font-weight:500;transition:color 0.2s;position:relative;}
+    nav ul a::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:1.5px;background:var(--teal);transition:width 0.3s var(--ease);}
+    nav ul a:hover{color:var(--teal);}
+    nav ul a:hover::after{width:100%;}
+    .nav-cta{background:var(--dark);color:var(--white)!important;padding:12px 28px;font-weight:600!important;clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,8px 100%,0 calc(100% - 8px));transition:background 0.3s!important;}
+    .nav-cta::after{display:none!important;}
+    .nav-cta:hover{background:var(--teal)!important;}
+
+    /* HERO */
+    .hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:120px 6% 80px;gap:80px;position:relative;overflow:hidden;}
+    .hero::before{content:'';position:absolute;top:-200px;right:-200px;width:700px;height:700px;background:radial-gradient(circle,rgba(0,168,150,0.06) 0%,transparent 70%);border-radius:50%;animation:floatGlow 8s ease-in-out infinite;}
+    @keyframes floatGlow{0%,100%{transform:translateY(0) scale(1);}50%{transform:translateY(-20px) scale(1.05);}}
+
+    .hero-tag{display:inline-flex;align-items:center;gap:10px;background:var(--teal-light);color:var(--teal);font-size:0.72rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;padding:8px 18px;margin-bottom:28px;opacity:0;animation:fadeUp 0.7s var(--ease) 0.3s forwards;}
+    .hero h1{font-family:'Fraunces',serif;font-size:clamp(3rem,6vw,5.5rem);font-weight:900;line-height:1.0;letter-spacing:-0.03em;color:var(--dark);margin-bottom:28px;opacity:0;animation:fadeUp 0.8s var(--ease) 0.5s forwards;}
+    .hero h1 em{font-style:italic;color:var(--teal);}
+    .hero-sub{font-size:1.05rem;color:var(--muted);line-height:1.75;max-width:460px;margin-bottom:40px;opacity:0;animation:fadeUp 0.8s var(--ease) 0.7s forwards;}
+    .hero-btns{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:48px;opacity:0;animation:fadeUp 0.8s var(--ease) 0.9s forwards;}
+
+    .btn-dark{background:var(--dark);color:var(--white);padding:16px 36px;font-weight:700;font-size:0.85rem;letter-spacing:0.05em;text-decoration:none;transition:all 0.3s var(--ease);clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));}
+    .btn-dark:hover{background:var(--teal);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,121,107,0.25);}
+    .btn-outline{border:2px solid var(--border);color:var(--dark);padding:14px 32px;font-weight:600;font-size:0.85rem;text-decoration:none;transition:all 0.3s var(--ease);}
+    .btn-outline:hover{border-color:var(--teal);color:var(--teal);transform:translateY(-2px);}
+
+    .hero-trust{display:flex;gap:32px;padding-top:32px;border-top:1px solid var(--border);opacity:0;animation:fadeUp 0.8s var(--ease) 1.1s forwards;}
+    .trust-num{font-family:'Fraunces',serif;font-size:2.2rem;font-weight:900;color:var(--dark);line-height:1;}
+    .trust-num span{color:var(--teal);}
+    .trust-label{font-size:0.75rem;color:var(--muted);margin-top:4px;}
+
+    .hero-right{position:relative;opacity:0;animation:fadeUp 0.9s var(--ease) 0.6s forwards;}
+    .hero-img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;}
+    .hero-card{position:absolute;bottom:-20px;left:-30px;background:var(--white);padding:24px 28px;box-shadow:0 20px 60px rgba(0,0,0,0.1);min-width:220px;transition:transform 0.3s var(--ease);}
+    .hero-card:hover{transform:translateY(-4px);}
+    .hero-card-title{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-bottom:10px;}
+    .stars{color:var(--gold);font-size:1rem;letter-spacing:2px;}
+    .rating-num{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:900;color:var(--dark);}
+    .rating-sub{font-size:0.75rem;color:var(--muted);margin-top:2px;}
+    .hero-badge{position:absolute;top:24px;right:-16px;background:var(--teal);color:white;padding:16px 20px;text-align:center;animation:badgePulse 3s ease-in-out infinite;}
+    @keyframes badgePulse{0%,100%{box-shadow:0 0 0 0 rgba(0,121,107,0.4);}70%{box-shadow:0 0 0 10px rgba(0,121,107,0);}}
+    .badge-num{font-family:'Fraunces',serif;font-size:1.8rem;font-weight:900;line-height:1;}
+    .badge-label{font-size:0.65rem;letter-spacing:0.1em;text-transform:uppercase;opacity:0.85;margin-top:4px;}
+
+    @keyframes fadeUp{from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}}
+
+    /* MARQUEE */
+    .marquee{padding:20px 0;background:var(--dark);overflow:hidden;}
+    .marquee-inner{display:flex;gap:60px;animation:mq 20s linear infinite;white-space:nowrap;}
+    .mq-item{font-family:'Fraunces',serif;font-size:1rem;font-style:italic;color:rgba(255,255,255,0.5);flex-shrink:0;}
+    .mq-dot{color:var(--teal2);margin:0 20px;}
+    @keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+    /* SECTIONS */
+    section{padding:100px 6%;}
+    .sec-label{font-size:0.72rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--teal);margin-bottom:16px;}
+    .sec-title{font-family:'Fraunces',serif;font-size:clamp(2.5rem,5vw,4.5rem);font-weight:900;letter-spacing:-0.03em;line-height:1;color:var(--dark);margin-bottom:16px;}
+    .sec-title em{font-style:italic;color:var(--teal);}
+    .sec-sub{color:var(--muted);font-size:1rem;line-height:1.7;max-width:500px;margin-bottom:60px;}
+
+    /* SERVICES */
+    #services{background:var(--white);}
+    .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;background:var(--border);}
+    .svc{background:var(--white);padding:48px 36px;transition:all 0.4s var(--ease);position:relative;overflow:hidden;}
+    .svc::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--teal),var(--teal2));transform:scaleX(0);transform-origin:left;transition:transform 0.4s var(--ease);}
+    .svc:hover{background:var(--bg);transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,0.05);}
+    .svc:hover::after{transform:scaleX(1);}
+    .svc-icon{width:56px;height:56px;background:var(--teal-light);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:24px;transition:transform 0.3s var(--ease);}
+    .svc:hover .svc-icon{transform:scale(1.1);}
+    .svc h3{font-family:'Fraunces',serif;font-size:1.3rem;font-weight:700;color:var(--dark);margin-bottom:12px;}
+    .svc p{font-size:0.85rem;color:var(--muted);line-height:1.7;}
+
+    /* ABOUT */
+    .about-wrap{display:grid;grid-template-columns:1fr 1fr;min-height:580px;}
+    .about-img{background:url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900&q=85&fit=crop') center/cover;position:relative;}
+    .about-img::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,121,107,0.1),transparent);}
+    .about-content{padding:80px 6% 80px 60px;background:var(--bg);display:flex;flex-direction:column;justify-content:center;}
+    .about-content p{color:var(--muted);line-height:1.8;margin-bottom:20px;font-size:0.95rem;}
+    .doctor-card{background:var(--white);padding:28px;border-left:3px solid var(--teal);margin-top:32px;transition:transform 0.3s var(--ease),box-shadow 0.3s;}
+    .doctor-card:hover{transform:translateX(4px);box-shadow:4px 0 20px rgba(0,121,107,0.1);}
+    .doc-name{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:900;color:var(--dark);}
+    .doc-title{font-size:0.8rem;color:var(--teal);font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-top:4px;}
+    .doc-creds{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;}
+    .cred{background:var(--teal-light);color:var(--teal);font-size:0.72rem;font-weight:700;padding:4px 12px;}
+
+    /* PRICING */
+    #pricing{background:var(--white);}
+    .pricing-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px;}
+    .price-card{border:2px solid var(--border);padding:48px 36px;position:relative;transition:all 0.4s var(--ease);}
+    .price-card.featured{border-color:var(--teal);background:var(--dark);color:var(--white);}
+    .price-card.featured .price-label{color:var(--teal2);}
+    .price-card.featured .price-name,.price-card.featured .price-amount{color:var(--white);}
+    .price-card.featured .price-desc,.price-card.featured .price-feature{color:rgba(255,255,255,0.5);}
+    .price-card.featured .price-feature{border-color:rgba(255,255,255,0.1);}
+    .price-card:not(.featured):hover{border-color:var(--teal);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,121,107,0.1);}
+    .featured-badge{position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--teal);color:white;font-size:0.7rem;font-weight:700;padding:6px 20px;letter-spacing:0.1em;text-transform:uppercase;}
+    .price-label{font-size:0.72rem;font-weight:700;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal);margin-bottom:12px;}
+    .price-name{font-family:'Fraunces',serif;font-size:1.6rem;font-weight:900;color:var(--dark);margin-bottom:8px;}
+    .price-amount{font-family:'Fraunces',serif;font-size:3rem;font-weight:900;color:var(--dark);line-height:1;margin:20px 0;}
+    .price-amount span{font-size:1rem;font-weight:400;color:var(--muted);}
+    .price-desc{font-size:0.85rem;color:var(--muted);line-height:1.6;margin-bottom:28px;}
+    .price-features{border-top:1px solid var(--border);padding-top:24px;display:flex;flex-direction:column;gap:12px;}
+    .price-feature{font-size:0.85rem;color:var(--muted);display:flex;align-items:center;gap:10px;padding-bottom:12px;border-bottom:1px solid var(--border);}
+    .price-feature:last-child{border-bottom:none;}
+    .price-feature::before{content:'✓';color:var(--teal);font-weight:700;flex-shrink:0;}
+    .btn-price{display:block;text-align:center;margin-top:32px;padding:14px;font-weight:700;font-size:0.85rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.3s var(--ease);border:2px solid var(--dark);color:var(--dark);}
+    .btn-price:hover,.price-card.featured .btn-price{background:var(--teal);border-color:var(--teal);color:white;}
+
+    /* REVIEWS */
+    #reviews{background:var(--bg);}
+    .reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:60px;}
+    .review-card{background:var(--white);padding:36px;border-bottom:3px solid transparent;transition:all 0.4s var(--ease);}
+    .review-card:hover{border-color:var(--teal);transform:translateY(-6px);box-shadow:0 20px 40px rgba(0,0,0,0.06);}
+    .review-stars{color:var(--gold);font-size:0.9rem;margin-bottom:16px;letter-spacing:3px;}
+    .review-text{font-size:0.9rem;color:var(--muted);line-height:1.75;margin-bottom:20px;font-style:italic;}
+    .review-author{font-weight:700;color:var(--dark);font-size:0.85rem;}
+    .review-date{font-size:0.75rem;color:var(--muted);margin-top:2px;}
+
+    /* BOOKING */
+    #booking{background:var(--dark);color:white;}
+    #booking .sec-label{color:var(--teal2);}
+    #booking .sec-title{color:white;}
+    #booking .sec-title em{color:var(--teal2);}
+    .booking-layout{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:60px;}
+    .booking-info p{color:rgba(255,255,255,0.5);line-height:1.8;margin-bottom:32px;}
+    .info-row{display:flex;gap:16px;align-items:flex-start;margin-bottom:20px;transition:transform 0.2s;}
+    .info-row:hover{transform:translateX(4px);}
+    .info-icon{width:44px;height:44px;border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0;}
+    .info-text strong{display:block;color:white;font-size:0.9rem;margin-bottom:2px;}
+    .info-text span{color:rgba(255,255,255,0.4);font-size:0.82rem;}
+    .booking-form{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);padding:40px;}
+    .form-group{margin-bottom:20px;}
+    .form-group label{display:block;font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:8px;font-weight:600;}
+    .form-group input,.form-group select,.form-group textarea{width:100%;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);color:white;padding:14px 16px;font-family:'DM Sans',sans-serif;font-size:0.9rem;outline:none;transition:border 0.2s,box-shadow 0.2s;}
+    .form-group input:focus,.form-group select:focus,.form-group textarea:focus{border-color:var(--teal2);box-shadow:0 0 0 3px rgba(0,168,150,0.1);}
+    .form-group input::placeholder,.form-group textarea::placeholder{color:rgba(255,255,255,0.2);}
+    .form-group select option{background:#1a1a1a;}
+    .form-group textarea{height:100px;resize:none;}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    .btn-submit{width:100%;background:var(--teal);color:white;border:none;padding:16px;font-family:'DM Sans',sans-serif;font-size:0.9rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;cursor:pointer;transition:all 0.3s var(--ease);clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px));}
+    .btn-submit:hover{background:var(--teal2);transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,168,150,0.3);}
+    .form-success{display:none;text-align:center;padding:20px;color:var(--teal2);font-weight:600;}
+
+    /* FOOTER */
+    footer{padding:40px 6%;background:var(--dark);border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px;}
+    .footer-logo{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:900;color:white;}
+    .footer-logo span{color:var(--teal2);}
+    footer p{font-size:0.8rem;color:rgba(255,255,255,0.3);}
+    .footer-links{display:flex;gap:24px;}
+    .footer-links a{font-size:0.8rem;color:rgba(255,255,255,0.3);text-decoration:none;transition:color 0.2s;}
+    .footer-links a:hover{color:var(--teal2);}
+
+    /* REVEAL */
+    .reveal{opacity:0;transform:translateY(40px);transition:opacity 0.7s var(--ease),transform 0.7s var(--ease);}
+    .reveal.visible{opacity:1;transform:translateY(0);}
+
+    @media(max-width:900px){
+      nav ul{display:none;}
+      .hero{grid-template-columns:1fr;padding-top:110px;gap:40px;}
+      .hero-right{display:none;}
+      .about-wrap{grid-template-columns:1fr;}
+      .about-img{min-height:350px;}
+      .about-content{padding:60px 6%;}
+      .services-grid,.pricing-grid,.reviews-grid{grid-template-columns:1fr;}
+      .booking-layout,.form-row{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<nav id="mainNav">
+  <a href="#" class="logo">Bright<span>line</span></a>
+  <ul>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#about">Our Team</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#reviews">Reviews</a></li>
+    <li><a href="#booking" class="nav-cta">Book Visit</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <div class="hero-left">
+    <div class="hero-tag">✦ Los Angeles Dental Studio</div>
+    <h1>Your smile deserves <em>expert</em> care.</h1>
+    <p class="hero-sub">Brightline Dental Studio combines modern techniques with genuine warmth. Same-week appointments, transparent pricing, and results you'll love.</p>
+    <div class="hero-btns">
+      <a href="#booking" class="btn-dark">Book Your Visit</a>
+      <a href="#services" class="btn-outline">Explore Services →</a>
+    </div>
+    <div class="hero-trust">
+      <div class="trust-item"><div class="trust-num">4.9<span>★</span></div><div class="trust-label">Google Rating</div></div>
+      <div class="trust-item"><div class="trust-num">800<span>+</span></div><div class="trust-label">Happy Patients</div></div>
+      <div class="trust-item"><div class="trust-num">12<span>+</span></div><div class="trust-label">Years in LA</div></div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div style="position:relative;">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=900&q=85&fit=crop" alt="Brightline Dental Studio Los Angeles" class="hero-img"/>
+      <div class="hero-badge"><div class="badge-num">Same</div><div class="badge-label">Week Appts</div></div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-title">Patient Rating</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <div class="stars">★★★★★</div>
+        <div><div class="rating-num">4.9</div><div class="rating-sub">800+ reviews</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="marquee">
+  <div class="marquee-inner">
+    <span class="mq-item">Preventive Care</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Teeth Whitening</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Clear Aligners</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Dental Implants</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Emergency Care</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Family Dentistry</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Cosmetic Dentistry</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Preventive Care</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Teeth Whitening</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Clear Aligners</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Dental Implants</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Emergency Care</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Family Dentistry</span><span class="mq-dot">✦</span>
+    <span class="mq-item">Cosmetic Dentistry</span><span class="mq-dot">✦</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="sec-label reveal">What We Offer</div>
+  <h2 class="sec-title reveal">Comprehensive <em>Dental</em> Care</h2>
+  <p class="sec-sub reveal">From your first cleaning to complete smile transformations — we handle it all under one roof.</p>
+  <div class="services-grid">
+    <div class="svc reveal"><div class="svc-icon">🦷</div><h3>Preventive Care</h3><p>Cleanings, exams, X-rays, and sealants to keep your smile healthy and catch issues early.</p></div>
+    <div class="svc reveal"><div class="svc-icon">✨</div><h3>Teeth Whitening</h3><p>Professional in-office whitening that delivers results up to 8 shades brighter in one visit.</p></div>
+    <div class="svc reveal"><div class="svc-icon">😁</div><h3>Clear Aligners</h3><p>Straighten your teeth discreetly with custom aligner trays — no metal wires required.</p></div>
+    <div class="svc reveal"><div class="svc-icon">🔬</div><h3>Dental Implants</h3><p>Permanent tooth replacement that looks, feels, and functions just like your natural teeth.</p></div>
+    <div class="svc reveal"><div class="svc-icon">🚨</div><h3>Emergency Care</h3><p>Same-day appointments for dental pain, broken teeth, lost fillings, or sudden swelling.</p></div>
+    <div class="svc reveal"><div class="svc-icon">👨‍👩‍👧</div><h3>Family Dentistry</h3><p>Gentle care for every age — from toddler first visits to complete senior dental health plans.</p></div>
+  </div>
+</section>
+
+<div id="about" class="about-wrap">
+  <div class="about-img"></div>
+  <div class="about-content">
+    <div class="sec-label reveal">Our Doctor</div>
+    <h2 class="sec-title reveal" style="font-size:clamp(2rem,4vw,3.5rem);">Dr. Nemazee, <em>DMD</em></h2>
+    <p class="reveal">Dr. Nemazee has been serving Los Angeles patients for over 12 years. Known for a gentle touch and genuine care, patients consistently describe their visits as calm, thorough, and reassuring.</p>
+    <p class="reveal">From routine cleanings to complex restorative work, Dr. Nemazee and the Brightline team are committed to making every visit comfortable and every outcome exceptional.</p>
+    <div class="doctor-card reveal">
+      <div class="doc-name">Dr. Nemazee</div>
+      <div class="doc-title">Doctor of Dental Medicine · Los Angeles</div>
+      <div class="doc-creds">
+        <span class="cred">DMD Certified</span>
+        <span class="cred">12+ Years</span>
+        <span class="cred">Cosmetic Specialist</span>
+        <span class="cred">Implant Certified</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="pricing">
+  <div class="sec-label reveal">Transparent Pricing</div>
+  <h2 class="sec-title reveal">Simple Plans, <em>No Surprises</em></h2>
+  <p class="sec-sub reveal">We believe in honest pricing. What you see is what you pay — no hidden fees, ever.</p>
+  <div class="pricing-grid">
+    <div class="price-card reveal">
+      <div class="price-label">Starter</div>
+      <div class="price-name">Basic Care</div>
+      <div class="price-amount">$89<span>/visit</span></div>
+      <div class="price-desc">Perfect for routine maintenance and keeping your smile healthy.</div>
+      <div class="price-features">
+        <div class="price-feature">Full cleaning & polish</div>
+        <div class="price-feature">Digital X-rays</div>
+        <div class="price-feature">Exam & consultation</div>
+        <div class="price-feature">Fluoride treatment</div>
+      </div>
+      <a href="#booking" class="btn-price">Book Now</a>
+    </div>
+    <div class="price-card featured reveal">
+      <div class="featured-badge">Most Popular</div>
+      <div class="price-label">Premium</div>
+      <div class="price-name">Complete Care</div>
+      <div class="price-amount">$249<span>/visit</span></div>
+      <div class="price-desc">Comprehensive care including whitening and cosmetic consultation.</div>
+      <div class="price-features">
+        <div class="price-feature">Everything in Basic</div>
+        <div class="price-feature">Professional whitening</div>
+        <div class="price-feature">Cosmetic consultation</div>
+        <div class="price-feature">Priority scheduling</div>
+        <div class="price-feature">Free follow-up visit</div>
+      </div>
+      <a href="#booking" class="btn-price">Book Now</a>
+    </div>
+    <div class="price-card reveal">
+      <div class="price-label">Advanced</div>
+      <div class="price-name">Smile Design</div>
+      <div class="price-amount">$599<span>/plan</span></div>
+      <div class="price-desc">Full smile transformation with aligners, whitening, and veneers.</div>
+      <div class="price-features">
+        <div class="price-feature">Everything in Complete</div>
+        <div class="price-feature">Clear aligner evaluation</div>
+        <div class="price-feature">Veneer consultation</div>
+        <div class="price-feature">3D smile preview</div>
+        <div class="price-feature">Full treatment plan</div>
+      </div>
+      <a href="#booking" class="btn-price">Book Now</a>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="sec-label reveal">Patient Stories</div>
+  <h2 class="sec-title reveal">What Our <em>Patients</em> Say</h2>
+  <div class="reviews-grid">
+    <div class="review-card reveal"><div class="review-stars">★★★★★</div><p class="review-text">"Dr. Nemazee is genuinely the best dentist I've ever had. He takes time to explain everything, never rushes, and the results are incredible."</p><div class="review-author">Sarah M.</div><div class="review-date">Los Angeles · Google Review</div></div>
+    <div class="review-card reveal"><div class="review-stars">★★★★★</div><p class="review-text">"I used to dread the dentist. Now I actually look forward to my visits. The whole team is warm, professional, and the office is beautiful."</p><div class="review-author">Marcus T.</div><div class="review-date">West Hollywood · Google Review</div></div>
+    <div class="review-card reveal"><div class="review-stars">★★★★★</div><p class="review-text">"Got my whitening done here and couldn't be happier. Booked online, came in same week, left with a smile I love. Highly recommend!"</p><div class="review-author">Priya K.</div><div class="review-date">Silver Lake · Google Review</div></div>
+  </div>
+</section>
+
+<section id="booking">
+  <div class="sec-label reveal">Reserve Your Visit</div>
+  <h2 class="sec-title reveal">Book Your <em>Appointment</em></h2>
+  <div class="booking-layout">
+    <div class="booking-info reveal">
+      <p>Ready for a healthier, brighter smile? Fill out the form and we'll confirm your slot within 2 hours. Same-week appointments available.</p>
+      <div class="info-row"><div class="info-icon">📍</div><div class="info-text"><strong>Location</strong><span>Los Angeles, CA · Hollywood Area</span></div></div>
+      <div class="info-row"><div class="info-icon">📞</div><div class="info-text"><strong>Phone</strong><span>(323) 555-0142</span></div></div>
+      <div class="info-row"><div class="info-icon">🕐</div><div class="info-text"><strong>Hours</strong><span>Mon–Fri: 8AM–6PM · Sat: 9AM–3PM</span></div></div>
+      <div class="info-row"><div class="info-icon">💳</div><div class="info-text"><strong>Insurance</strong><span>Most major plans accepted · Financing available</span></div></div>
+    </div>
+    <div class="booking-form reveal">
+      <div class="form-row">
+        <div class="form-group"><label>First Name</label><input type="text" id="fname" placeholder="John"/></div>
+        <div class="form-group"><label>Phone</label><input type="tel" id="phone" placeholder="(323) 000-0000"/></div>
+      </div>
+      <div class="form-group"><label>Service</label>
+        <select id="service">
+          <option value="">Select a service</option>
+          <option>Cleaning & Exam</option>
+          <option>Teeth Whitening</option>
+          <option>Clear Aligners</option>
+          <option>Dental Implants</option>
+          <option>Emergency Visit</option>
+          <option>Smile Consultation</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label>Preferred Date</label><input type="date" id="date"/></div>
+        <div class="form-group"><label>Preferred Time</label>
+          <select><option>Morning (8–12PM)</option><option>Afternoon (12–4PM)</option><option>Evening (4–6PM)</option></select>
+        </div>
+      </div>
+      <div class="form-group"><label>Message</label><textarea placeholder="Any concerns or questions for Dr. Nemazee?"></textarea></div>
+      <button class="btn-submit" onclick="submitForm()">Request My Appointment →</button>
+      <div class="form-success" id="formSuccess">✅ Request received! We'll confirm within 2 hours.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-logo">Bright<span>line</span></div>
+  <p>© 2026 Brightline Dental Studio · Los Angeles, CA</p>
+  <div class="footer-links">
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#booking">Book</a>
+    <a href="tel:+13235550142">(323) 555-0142</a>
+  </div>
+</footer>
+
+<script>
+  const cursor=document.getElementById('cursor');
+  const ring=document.getElementById('cursorRing');
+  let mx=0,my=0,rx=0,ry=0;
+  document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;cursor.style.left=mx+'px';cursor.style.top=my+'px';});
+  function animRing(){rx+=(mx-rx)*0.1;ry+=(my-ry)*0.1;ring.style.left=rx+'px';ring.style.top=ry+'px';requestAnimationFrame(animRing);}
+  animRing();
+  document.querySelectorAll('a,button').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{cursor.classList.add('hovering');ring.classList.add('hovering');});
+    el.addEventListener('mouseleave',()=>{cursor.classList.remove('hovering');ring.classList.remove('hovering');});
+  });
+  window.addEventListener('scroll',()=>{document.getElementById('mainNav').classList.toggle('compact',window.scrollY>60);});
+  const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('visible');});},{threshold:0.1});
+  document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+  document.getElementById('date').min=new Date().toISOString().split('T')[0];
+  function submitForm(){
+    if(!document.getElementById('fname').value||!document.getElementById('phone').value||!document.getElementById('service').value){alert('Please fill all required fields.');return;}
+    document.getElementById('formSuccess').style.display='block';
+    setTimeout(()=>document.getElementById('formSuccess').style.display='none',5000);
+  }
+</script>
+</body>
+</html>
